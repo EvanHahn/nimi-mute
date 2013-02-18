@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang=tokipona>
+<head>
+	<meta charset=UTF-8>
+	<link rel=stylesheet href=sitelen.css>
+	<title>nimi mute lon toki pona</title>
+	<meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
+	<script>scrollTo(0,1);</script>
+</head>
+<body>
+
+	<input class=lukin placeholder=lukin data-bind="value: lukin">
+
+	<ol class=nimi-mute data-bind="foreach: nimiMute">
+		<li data-bind="visible: pali">
+			<div class=nimi data-bind="text: nimi"></div>
+			<ul class=sitelen-mute data-bind="foreach: sitelen">
+				<li data-bind="text: $data"></li>
+			</ul>
+		</li>
+	</ol>
+
+	<script src="js/knockout.js"></script>
+	<script src="js/nimi.js"></script>
+	<script src="js/sinpin.js"></script>
+
+</body>
+</html>
