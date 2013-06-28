@@ -29,6 +29,14 @@ window.words = [
 			"n: everything, anything, life, the universe",
 			"mod: all, every, complete, whole"
 		]
-	}
+	},
+
+	{
+		word: "anpa",
+		definitions: [
+			"n: bottom, lower part, under, below, floor, beneath",
+			"mod: low, lower, bottom, down"
+		]
+	},
 
 ];
