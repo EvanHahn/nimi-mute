@@ -15,7 +15,7 @@
 
 <ol class=word-list data-bind="foreach: words">
 	<li>
-		<div class=word data-bind="text: word"></div>
+		<a class=word target="_blank" data-bind="text: word, attr: { href: 'http://en.tokipona.org/wiki/' + word }"></a>
 		<ul class=definitions data-bind="foreach: definitions">
 			<li data-bind="text: $data"></li>
 		</ul>
