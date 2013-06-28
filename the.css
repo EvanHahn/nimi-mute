@@ -14,11 +14,11 @@ title {
 	font-weight: bold;
 }
 
-.nimi-mute {
+.word-list {
 	font-family: Georgia, serif;
 }
 
-.lukin {
+.search {
 	width: 100%;
 	padding: 0;
 	margin: 8px 0 0 0;
@@ -29,21 +29,21 @@ title {
 	outline: 0;
 }
 
-.lukin:focus {
+.search:focus {
 	border-bottom-color: #900;
 }
 
-.nimi-mute > li {
+.word-list > li {
 	padding: 1em 0;
 	border-bottom: 1px dotted #999;
 }
 
-.nimi-mute .nimi {
+.word-list .word {
 	font-weight: bold;
 }
 
-.nimi-mute .sitelen-mute {
+.word-list .definitions {
 }
 
-.nimi-mute .sitelen-mute > li {
+.word-list .definitions > li {
 }
