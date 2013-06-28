@@ -11,20 +11,20 @@
 </head>
 <body>
 
-	<input class=lukin placeholder=lukin data-bind="value: lukin">
+<input class=lukin placeholder=lukin data-bind="value: lukin">
 
-	<ol class=nimi-mute data-bind="foreach: nimiMute">
-		<li data-bind="visible: pali">
-			<div class=nimi data-bind="text: nimi"></div>
-			<ul class=sitelen-mute data-bind="foreach: sitelen">
-				<li data-bind="text: $data"></li>
-			</ul>
-		</li>
-	</ol>
+<ol class=nimi-mute data-bind="foreach: nimiMute">
+	<li data-bind="visible: pali">
+		<div class=nimi data-bind="text: nimi"></div>
+		<ul class=sitelen-mute data-bind="foreach: sitelen">
+			<li data-bind="text: $data"></li>
+		</ul>
+	</li>
+</ol>
 
-	<script src="js/knockout.js"></script>
-	<script src="js/nimi.js"></script>
-	<script src="js/sinpin.js"></script>
+<script src="js/knockout.js"></script>
+<script src="js/nimi.js"></script>
+<script src="js/sinpin.js"></script>
 
 </body>
 </html>
