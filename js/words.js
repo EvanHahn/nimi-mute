@@ -1,4 +1,4 @@
-window.wordList = [
+window.words = [
 
 	{
 		word: "a",
