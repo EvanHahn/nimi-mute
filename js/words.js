@@ -865,7 +865,7 @@ window.words = [
 	},
 
 	{
-		word: "tenmp",
+		word: "tenpo",
 		definitions: [
 			"n: time, period of time, moment, duration, situation"
 		]
