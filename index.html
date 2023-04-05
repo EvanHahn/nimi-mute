@@ -11,22 +11,13 @@
 </head>
 <body>
 
-<input class=search placeholder=lukin>
+<a class="callout" href="https://linku.la/" target="_blank">
+  sin ijo pona (this other dictionary is better)
+</a>
 
-<ol class=word-list data-bind="foreach: words">
-	<li>
-		<a class=word target="_blank" data-bind="text: word, attr: { href: 'http://en.tokipona.org/wiki/' + word }"></a>
-		<ul class=definitions data-bind="foreach: definitions">
-			<li data-bind="text: $data"></li>
-		</ul>
-	</li>
-</ol>
+<dl class="word-list"></dl>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/jquery.js"><\/script>')</script>
-<script src="js/jquery.quicksearch.js"></script>
-<script src="//ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.1.js"></script>
-<script>window.ko || document.write('<script src="js/knockout.js"><\/script>')</script>
+<script src="js/fuse.js"></script>
 <script src="js/words.js"></script>
 <script src="js/the.js"></script>
 

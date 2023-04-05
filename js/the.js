@@ -1,3 +1,14 @@
-ko.applyBindings(words, document.getElementsByClassName("word-list")[0]);
+const crel = (tagName, innerText) => {
+  const result = document.createElement(tagName);
+  result.innerText = innerText;
+  return result;
+};
 
-$(".search").quicksearch(".word-list > li");
+const fragment = document.createDocumentFragment();
+words.forEach(({ word, definitions }) => {
+  fragment.appendChild(crel("dt", word));
+  definitions.forEach((definition) => {
+    fragment.appendChild(crel("dd", definition));
+  });
+});
+document.querySelector(".word-list").appendChild(fragment);

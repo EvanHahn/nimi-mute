@@ -2,6 +2,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 html {
 	padding: 0 1em;
+	font-family: Georgia, serif;
 }
 
 head, title {
@@ -12,44 +13,28 @@ title {
 	font-family: sans-serif;
 	font-size: 64px;
 	font-weight: bold;
+  padding: 1rem 0;
 }
 
-.word-list {
-	font-family: Georgia, serif;
+.callout {
+  background: #ff8;
+  display: block;
+  padding: 1rem;
+  margin: 2rem 0;
+  color: #000;
+  font-size: 200%;
 }
 
-.search {
-	width: 100%;
-	padding: 0;
-	margin: 8px 0 0 0;
-	border: 0;
-	border-bottom: 1px solid #999;
-	font-family: Georgia, serif;
-	font-size: 24px;
-	outline: 0;
-}
-
-.search:focus {
-	border-bottom-color: #900;
-}
-
-.word-list > li {
+.word-list dt {
 	padding: 1em 0;
-	border-bottom: 1px dotted #999;
+  margin-top: 1em;
+	border-top: 1px dotted #999;
 }
 
-.word-list .word {
+.word-list dt:first-child {
+  border-top: 0;
+}
+
+.word-list dt {
 	font-weight: bold;
-	color: #000;
-	text-decoration: none;
-}
-
-.word-list .word:hover {
-	color: #900;
-}
-
-.word-list .definitions {
-}
-
-.word-list .definitions > li {
 }
